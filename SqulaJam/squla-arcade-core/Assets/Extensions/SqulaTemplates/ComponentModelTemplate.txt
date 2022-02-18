@@ -1,8 +1,0 @@
-
-namespace Squla.App.{Namespace}
-{
-	public class {ComponentModel}
-	{
-        
-    }
-}

@@ -1,8 +1,0 @@
-version: 2
-importPivots: 1
-tpsheetFileNames:
-- Assets/StaticAssets/Components/Spinner/Sprites/SpinnerSquared.tpsheet
-textureFileNames:
-- Assets/StaticAssets/Components/Spinner/Sprites/SpinnerSquared.png
-normalmapFileNames:
-- 

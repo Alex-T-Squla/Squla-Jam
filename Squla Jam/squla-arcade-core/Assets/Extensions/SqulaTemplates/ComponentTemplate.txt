@@ -1,0 +1,17 @@
+using UnityEngine;
+using Squla.Core.IOC;
+
+namespace Squla.App.{Namespace}
+{
+
+	public class {Component} : MonoBehaviourV2
+	{
+
+        public void ApplyModel({ComponentModel} model)
+        {
+                
+        }
+
+    }
+
+}

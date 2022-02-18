@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fe08a8f7542128cf98a2d91f17b20, type: 3}
+  m_Name: NetworkTestSuites
+  m_EditorClassIdentifier: 
+  title: 
+  tests:
+  - enabled: 1
+    test: {fileID: 1884947856678940, guid: 2ca86a5a6612847b4bf79cacc8aacf5d, type: 3}
+  - enabled: 1
+    test: {fileID: 1884947856678940, guid: fd795e455ff2343a98dea12032498360, type: 3}
+  - enabled: 0
+    test: {fileID: 1884947856678940, guid: c89aa7ab5bfbb439aa4c6bd612b7caee, type: 3}
+  - enabled: 0
+    test: {fileID: 1884947856678940, guid: daf3e40c298264e2bacaebcf47555a82, type: 3}
+  - enabled: 0
+    test: {fileID: 1884947856678940, guid: 926ca09d8179e45fb8696a2860203ea4, type: 3}
+  - enabled: 0
+    test: {fileID: 1884947856678940, guid: c3ec5bb031d464ef38ec4978bb2f2a8d, type: 3}
+  - enabled: 0
+    test: {fileID: 1884947856678940, guid: 7c2002a89ae8c427faa769375c8c2782, type: 3}
+  - enabled: 0
+    test: {fileID: 1884947856678940, guid: 6c914e9fccd9f4d95b64d7fa6b175a35, type: 3}

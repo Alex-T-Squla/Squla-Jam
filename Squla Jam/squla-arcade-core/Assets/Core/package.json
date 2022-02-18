@@ -1,0 +1,9 @@
+{
+  "name": "nl.squla.core",
+  "displayName": "Squla Core",
+  "version": "1.0.0",
+  "description": "Squla IOC, i18n, Logging, ZeroQ and ScreenTransitionLogic",
+  "author": "Futurewhiz",
+  "dependencies": {
+  }
+}

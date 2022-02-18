@@ -1,0 +1,15 @@
+{
+    "name": "Squla.Modelize",
+    "references": [
+        "GUID:2643bcad7d0374fde84f7edcf33a0205",
+        "GUID:7bb3196ad5b19431291a1cf341d77c6d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

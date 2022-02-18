@@ -1,0 +1,14 @@
+{
+    "name": "Squla.ObjectPooling",
+    "references": [
+        "GUID:2643bcad7d0374fde84f7edcf33a0205"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

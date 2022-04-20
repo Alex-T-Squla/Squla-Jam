@@ -1295,7 +1295,7 @@ function _emscripten_asm_const_id(code, a0) {
  return ASM_CONSTS[code](a0);
 }
 STATIC_BASE = GLOBAL_BASE;
-STATICTOP = STATIC_BASE + 3289104;
+STATICTOP = STATIC_BASE + 3314640;
 __ATINIT__.push({
  func: (function() {
   __GLOBAL__sub_I_AIScriptingClasses_cpp();
@@ -3361,7 +3361,7 @@ __ATINIT__.push({
   ___emscripten_environ_constructor();
  })
 });
-var STATIC_BUMP = 3289104;
+var STATIC_BUMP = 3314640;
 Module["STATIC_BASE"] = STATIC_BASE;
 Module["STATIC_BUMP"] = STATIC_BUMP;
 var tempDoublePtr = STATICTOP;
@@ -11403,6 +11403,13 @@ function _emscripten_log(flags, varargs) {
  }
  _emscripten_log_js(flags, str);
 }
+function _longjmp(env, value) {
+ Module["setThrew"](env, value || 1);
+ throw "longjmp";
+}
+function _emscripten_longjmp(env, value) {
+ _longjmp(env, value);
+}
 function _emscripten_num_logical_cores() {
  return 1;
 }
@@ -13916,6 +13923,9 @@ var _llvm_floor_f64 = Math_floor;
 function _llvm_log10_f32(x) {
  return Math.log(x) / Math.LN10;
 }
+function _llvm_log10_f64() {
+ return _llvm_log10_f32.apply(null, arguments);
+}
 function _llvm_log2_f32(x) {
  return Math.log(x) / Math.LN2;
 }
@@ -13974,10 +13984,6 @@ function _localtime_r(time, tmPtr) {
 }
 function _localtime(time) {
  return _localtime_r(time, ___tm_current);
-}
-function _longjmp(env, value) {
- Module["setThrew"](env, value || 1);
- throw "longjmp";
 }
 function _emscripten_memcpy_big(dest, src, num) {
  HEAPU8.set(HEAPU8.subarray(src, src + num), dest);
@@ -16236,8 +16242,8 @@ function nullFunc_vjji(x) {
  err("Build with ASSERTIONS=2 for more info.");
  abort(x);
 }
-Module["wasmTableSize"] = 107453;
-Module["wasmMaxTableSize"] = 107453;
+Module["wasmTableSize"] = 107463;
+Module["wasmMaxTableSize"] = 107463;
 function invoke_dddi(index, a1, a2, a3) {
  var sp = stackSave();
  try {
@@ -20169,6 +20175,7 @@ Module.asmLibraryArg = {
  "_emscripten_is_webgl_context_lost": _emscripten_is_webgl_context_lost,
  "_emscripten_log": _emscripten_log,
  "_emscripten_log_js": _emscripten_log_js,
+ "_emscripten_longjmp": _emscripten_longjmp,
  "_emscripten_memcpy_big": _emscripten_memcpy_big,
  "_emscripten_num_logical_cores": _emscripten_num_logical_cores,
  "_emscripten_request_fullscreen": _emscripten_request_fullscreen,
@@ -20395,6 +20402,7 @@ Module.asmLibraryArg = {
  "_llvm_floor_f32": _llvm_floor_f32,
  "_llvm_floor_f64": _llvm_floor_f64,
  "_llvm_log10_f32": _llvm_log10_f32,
+ "_llvm_log10_f64": _llvm_log10_f64,
  "_llvm_log2_f32": _llvm_log2_f32,
  "_llvm_pow_f64": _llvm_pow_f64,
  "_llvm_sin_f32": _llvm_sin_f32,
